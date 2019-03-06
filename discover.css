@@ -1,7 +1,7 @@
 .discover-main-section {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   flex-grow: 1;
 }
 
@@ -10,19 +10,6 @@
   margin-left: 2rem;
   height: auto;
   max-width: 350px;
-}
-
-@media (max-width: 800px) {
-  .discover-main-section {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .discover-main-section .covers-image {
-    margin-top: 2rem;
-    height: 30vh;
-    width: auto;
-  }
 }
 
 .icon-section {
@@ -44,4 +31,17 @@
 
 .icon img {
   width: 40px;
+}
+
+@media (max-width: 800px) {
+  .discover-main-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .discover-main-section .covers-image {
+    margin-top: 2rem;
+    height: 30vh;
+    width: auto;
+  }
 }

@@ -14,13 +14,21 @@
 }
 
 .home-main-section .lady-image {
+  background-image: url(images/landing-page-girl.png);
   flex-grow: 1;
   max-height: 70vh;
   min-width: 30vw;
-  background-image: url(images/landing-page-girl.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom left;
+}
+
+.home-main-section .call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+  align-self: center;
 }
 
 @media (max-width: 900px) {
@@ -33,22 +41,14 @@
   }
 }
 
-.home-main-section .call-to-action {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 1rem;
-}
-
 .home-page-circle-1 {
   position: absolute;
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
+  background-color: rgb(188, 58, 128, .1);
   bottom: 5vw;
   left: 5vw;
-  background-color: rgba(188, 58, 128, .1);
   z-index: -1;
 }
 
@@ -57,28 +57,28 @@
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
+  background-color: rgb(52, 87, 178, .1);
   top: 15vh;
   left: 30vw;
-  background-color: rgba(52, 87, 178, .1);
   z-index: -1;
 }
 
 .home-page-circle-3 {
   position: absolute;
   overflow: hidden;
-  bottom: 0;
-  right: 0;
   width: 45vw;
   height: 45vw;
+  bottom: 0;
+  right: 0;
   z-index: -1;
 }
 
 .home-page-circle-3::before {
   content: '';
-  position: absolute;
   transform: translate(40%, 40%);
+  position: absolute;
   height: 100%;
-  border-radius: 50%;
   width: 100%;
-  background-color: rgba(52, 87, 178, .1);
+  border-radius: 50%;
+  background-color: rgb(52, 87, 178, .1);
 }
